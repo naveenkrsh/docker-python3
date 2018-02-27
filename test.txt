@@ -1,0 +1,7 @@
+
+docker build -t testapp:latest .
+
+docker run -d -p 8081:5000 -it --name mytestapp testapp:latest
+
+
+
