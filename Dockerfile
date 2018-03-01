@@ -10,7 +10,7 @@ WORKDIR /tmp
 RUN [ "conda", "env", "create", "-n","myenv"]
 
 COPY . /app
-WORKDIR /app/code
+WORKDIR /app/src
 
 CMD [ " source activate myenv && exec python app.py" ]
 
